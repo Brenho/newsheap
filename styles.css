@@ -1,0 +1,271 @@
+body {
+    background: #2D3142;
+    font-family: 'Lato', sans-serif;
+}
+
+@font-face{
+    font-family: "VimSM";
+    src: url('fonts/SMM002/VimSM.otf');
+}
+
+a{
+    text-decoration: none;
+    color: #FBFEF9;
+}
+
+h1, h2, h3{
+    margin-left: 5px;
+    color: #FBFEF9;
+    font-family: "VimSM", sans-serif;
+}
+
+button{
+    margin: 5px;
+    background: none;
+    border: 1px solid #FBFEF9;
+    padding: 8px;
+    color: #FBFEF9;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+button:hover{
+    background: #424554;
+}
+
+/*=========HEADER=============*/
+header{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "VimSM", sans-serif;
+}
+
+header h1{
+    font-size: 5em;
+}
+
+
+/*=========NAVBAR=============*/
+nav {
+    background: #2D3142;
+    margin: 5px;
+    border: 1px solid #FBFEF9;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    background: #424554;
+}
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+    nav li {
+        flex-grow: 1;
+    }
+}
+
+/*=========BODY=============*/
+.container{
+    display: flex;
+}
+
+.item{
+    height: 350px;
+    margin: 5px;
+}
+
+/*-----------TOP STORIES-------------*/
+
+.topStory-1{
+    background-color: aqua;
+    flex: 2;
+}
+
+.topStory-2{
+    background-color:aquamarine;
+    flex: 1;
+}
+
+.topStory-3{
+    background-color:cornflowerblue;
+    flex: 1;
+}
+
+.topStory-4{
+    background-color:cornflowerblue;
+    flex: 2;
+}
+
+.topStory-5{
+    background-color:aquamarine;
+    flex: 1;
+}
+
+.topStory-6{
+    background-color: aqua;
+    flex: 1;
+}
+
+/*-----------TOP GADGET STORIES-------------*/
+
+.gadgets{
+    padding: 25px 0;
+}
+
+.gadget-top-1{
+    background-color:aqua;
+    flex: 1;
+}
+
+.gadget-top-2{
+    background-color:aqua;
+    flex: 1;
+}
+
+.gadget-top-3{
+    background-color: aqua;
+    flex: 1;
+}
+
+/*-----------TOP SCIENCE STORIES-------------*/
+
+.science{
+    padding: 25px 0;
+}
+.science-top-1{
+    background-color: aqua;
+    flex: 1;
+}
+
+.science-top-2{
+    background-color: aqua;
+    flex: 1;
+}
+
+.science-top-3{
+    background-color: aqua;
+    flex: 1;
+}
+
+/*-----------TOP GAMING STORIES-------------*/
+
+.gaming{
+    padding: 25px 0;
+}
+
+.gaming-top-1{
+    background-color: aqua;
+    flex: 1;
+}
+
+.gaming-top-2{
+    background-color: aqua;
+    flex: 1;
+}
+
+.gaming-top-3{
+    background-color: aqua;
+    flex: 1;
+}
+
+/*=========OTHER PAGES=============*/
+
+.single-story{
+    background: aqua;
+    flex: 1;
+    position: relative;
+}
+
+.single-story img{
+    height:100%; 
+    width: 100%;
+}
+
+.single-story p{
+    position: absolute;
+    color: #fff;
+    letter-spacing: -1px; 
+    font-size: 24px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    margin: 0;
+}
+
+
+/*=========RESPONSIVE LAYOUT HOME PAGE=============*/
+
+@media screen and (max-width:990px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    
+    .item{
+        padding: 20px;
+        margin: 2px;
+    }
+    
+    .topStory-1{
+        flex-basis: 100%;
+    }
+    
+    .topStory-4{
+        flex-basis: 100%;
+    }
+    .gadgets, .science, .gaming{
+        text-align: center;
+    }
+    
+    .gadget-top-1, .science-top-1, .gaming-top-1{
+        flex-basis: 100%;
+    }
+    
+    .single-story{
+        padding: 0;
+        flex-basis: 100%;
+    }
+}
+/*=========FOOTER=============*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: #FBFEF9;
+}
+
+.footer-links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.footer-links a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: #FBFEF9;
+}
+
+
+
+
+
+
