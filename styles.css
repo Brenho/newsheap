@@ -1,40 +1,40 @@
 body {
     background: #2D3142;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 25px;
 }
-
-@font-face{
+@font-face {
     font-family: "VimSM";
     src: url('fonts/SMM002/VimSM.otf');
 }
-
-a{
+a {
     text-decoration: none;
     color: #FBFEF9;
 }
-
-h1, h2, h3{
+h1,
+h2,
+h3 {
     margin-left: 5px;
     color: #FBFEF9;
     font-family: "VimSM", sans-serif;
 }
 
-button{
+button {
     margin: 5px;
     background: none;
     border: 1px solid #FBFEF9;
     padding: 8px;
     color: #FBFEF9;
     cursor: pointer;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
 }
-
-button:hover{
+button:hover {
     background: #424554;
 }
 
 /*=========HEADER=============*/
-header{
+
+header {
     height: 25vh;
     display: flex;
     align-items: center;
@@ -42,13 +42,12 @@ header{
     color: white;
     font-family: "VimSM", sans-serif;
 }
-
-header h1{
+header h1 {
     font-size: 5em;
 }
 
-
 /*=========NAVBAR=============*/
+
 nav {
     background: #2D3142;
     margin: 5px;
@@ -66,7 +65,6 @@ nav a {
     display: block;
     padding: 10px;
 }
-
 nav a:hover {
     background: #424554;
 }
@@ -81,191 +79,193 @@ nav a:hover {
 }
 
 /*=========BODY=============*/
-.container{
+
+.container {
     display: flex;
 }
-
-.item{
-    height: 350px;
+.item {
+    height: 380px;
     margin: 5px;
+    position: relative;
 }
 
 /*-----------TOP STORIES-------------*/
 
-.topStory-1{
-    background-color: aqua;
-    flex: 2;
-}
-
-.topStory-2{
-    background-color:aquamarine;
-    flex: 1;
-}
-
-.topStory-3{
-    background-color:cornflowerblue;
-    flex: 1;
-}
-
-.topStory-4{
-    background-color:cornflowerblue;
-    flex: 2;
-}
-
-.topStory-5{
-    background-color:aquamarine;
-    flex: 1;
-}
-
-.topStory-6{
+.topStory:nth-child(1) {
     background-color: aqua;
     flex: 1;
+    padding: 0;
 }
-
+.topStory:nth-child(2) {
+    background-color: aquamarine;
+    flex: 1;
+    padding: 0;
+}
+.topStory:nth-child(3) {
+    background-color: cornflowerblue;
+    flex: 1;
+    padding: 0;
+}
+.topStory:nth-child(4) {
+    background-color: cornflowerblue;
+    flex: 2;
+    padding: 0;
+}
+.topStory:nth-child(5) {
+    background-color: aquamarine;
+    flex: 1;
+    padding: 0;
+}
+.topStory:nth-child(6) {
+    background-color: aqua;
+    flex: 1;
+    padding: 0;
+}
+.topStory img {
+    height: 100%;
+    width: 100%;
+}
+.topStory p {
+    padding: 10px;
+    margin: 0px;
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+.author{
+    text-align: center;
+}
 /*-----------TOP GADGET STORIES-------------*/
 
-.gadgets{
+.gadgets {
     padding: 25px 0;
 }
-
-.gadget-top-1{
-    background-color:aqua;
+.gadget-top-1 {
+    background-color: aqua;
     flex: 1;
 }
-
-.gadget-top-2{
-    background-color:aqua;
+.gadget-top-2 {
+    background-color: aqua;
     flex: 1;
 }
-
-.gadget-top-3{
+.gadget-top-3 {
     background-color: aqua;
     flex: 1;
 }
 
 /*-----------TOP SCIENCE STORIES-------------*/
 
-.science{
+.science {
     padding: 25px 0;
 }
-.science-top-1{
+.science-top-1 {
     background-color: aqua;
     flex: 1;
 }
-
-.science-top-2{
+.science-top-2 {
     background-color: aqua;
     flex: 1;
 }
-
-.science-top-3{
+.science-top-3 {
     background-color: aqua;
     flex: 1;
 }
 
 /*-----------TOP GAMING STORIES-------------*/
 
-.gaming{
+.gaming {
     padding: 25px 0;
 }
-
-.gaming-top-1{
+.gaming-top-1 {
     background-color: aqua;
     flex: 1;
 }
-
-.gaming-top-2{
+.gaming-top-2 {
     background-color: aqua;
     flex: 1;
 }
-
-.gaming-top-3{
+.gaming-top-3 {
     background-color: aqua;
     flex: 1;
 }
 
 /*=========OTHER PAGES=============*/
 
-.single-story{
+.single-story {
     background: aqua;
     flex: 1;
     position: relative;
 }
-
-.single-story img{
-    height:100%; 
+.single-story img {
+    height: 100%;
     width: 100%;
 }
-
-.single-story p{
-    position: absolute;
-    color: #fff;
-    letter-spacing: -1px; 
-    font-size: 24px;
-    padding: 5px;
-    background: rgba(0, 0, 0, 0.7);
-    cursor: pointer;
-    margin: 0;
-}
-
 
 /*=========RESPONSIVE LAYOUT HOME PAGE=============*/
 
 @media screen and (max-width:990px) {
-    .container{
-        flex-wrap: wrap;
+    body{
+        margin: 5px;
     }
     
-    .item{
+    .container {
+        flex-wrap: wrap;
+    }
+    .item {
         padding: 20px;
         margin: 2px;
     }
-    
-    .topStory-1{
+    .topStory:nth-child(1) {
         flex-basis: 100%;
     }
-    
-    .topStory-4{
+    .topStory:nth-child(4) {
         flex-basis: 100%;
     }
-    .gadgets, .science, .gaming{
+    .gadgets,
+    .science,
+    .gaming {
         text-align: center;
     }
-    
-    .gadget-top-1, .science-top-1, .gaming-top-1{
+    .gadget-top-1,
+    .science-top-1,
+    .gaming-top-1 {
         flex-basis: 100%;
     }
-    
-    .single-story{
+    .single-story {
         padding: 0;
         flex-basis: 100%;
     }
 }
+
 /*=========FOOTER=============*/
-footer{
+
+footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
     color: #FBFEF9;
 }
-
-.footer-links ul{
+.footer-links ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: inline-flex;
 }
-
-.footer-links a{
+.footer-links a {
     text-decoration: none;
     text-align: center;
     padding: 10px;
     color: #FBFEF9;
 }
-
-
-
-
-
-
