@@ -18,7 +18,6 @@ h3 {
     color: #FBFEF9;
     font-family: "VimSM", sans-serif;
 }
-
 button {
     margin: 5px;
     background: none;
@@ -30,6 +29,10 @@ button {
 }
 button:hover {
     background: #424554;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 85%;
 }
 
 /*=========HEADER=============*/
@@ -129,7 +132,6 @@ nav a:hover {
     padding: 10px;
     margin: 0px;
     font-size: 30px;
-    display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
@@ -143,82 +145,19 @@ nav a:hover {
     height: 120px;
     overflow: hidden;
 }
-.author{
+.author {
     text-align: center;
-}
-/*-----------TOP GADGET STORIES-------------*/
-
-.gadgets {
-    padding: 25px 0;
-}
-.gadget-top-1 {
-    background-color: aqua;
-    flex: 1;
-}
-.gadget-top-2 {
-    background-color: aqua;
-    flex: 1;
-}
-.gadget-top-3 {
-    background-color: aqua;
-    flex: 1;
-}
-
-/*-----------TOP SCIENCE STORIES-------------*/
-
-.science {
-    padding: 25px 0;
-}
-.science-top-1 {
-    background-color: aqua;
-    flex: 1;
-}
-.science-top-2 {
-    background-color: aqua;
-    flex: 1;
-}
-.science-top-3 {
-    background-color: aqua;
-    flex: 1;
-}
-
-/*-----------TOP GAMING STORIES-------------*/
-
-.gaming {
-    padding: 25px 0;
-}
-.gaming-top-1 {
-    background-color: aqua;
-    flex: 1;
-}
-.gaming-top-2 {
-    background-color: aqua;
-    flex: 1;
-}
-.gaming-top-3 {
-    background-color: aqua;
-    flex: 1;
-}
-
-/*=========OTHER PAGES=============*/
-
-.single-story {
-    background: aqua;
-    flex: 1;
-    position: relative;
-}
-.single-story img {
-    height: 100%;
-    width: 100%;
 }
 
 /*=========RESPONSIVE LAYOUT HOME PAGE=============*/
 
 @media screen and (max-width:990px) {
-    body{
+    body {
         margin: 5px;
     }
-    
+    .wrapper {
+        width: 100%;
+    }
     .container {
         flex-wrap: wrap;
     }

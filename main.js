@@ -25,9 +25,15 @@ $(document).ready(function () {
     var fourfourtwo = "https://newsapi.org/v2/top-headlines?sources=four-four-two&apiKey=820ef3088f094cf4b42fa03b90a1bdbc";
     var fourfourtwoDiv = $('#four-four-two-section');
 
+    var bizInsider = "https://newsapi.org/v2/top-headlines?sources=business-insider&apiKey=820ef3088f094cf4b42fa03b90a1bdbc";
+    var bizInsiderDiv = $('#biz-insider-section');
+
+    var wallStreet = "https://newsapi.org/v2/top-headlines?sources=the-wall-street-journal&apiKey=820ef3088f094cf4b42fa03b90a1bdbc";
+    var wallStreetDiv = $('#wall-street-section');
+
     var headlinesTopRow = "https://newsapi.org/v2/top-headlines?sources=reuters,cnn,associated-press&apiKey=820ef3088f094cf4b42fa03b90a1bdbc";
     var headlinesSecondRow = "https://newsapi.org/v2/top-headlines?sources=bbc-news,the-guardian-uk,independent&apiKey=820ef3088f094cf4b42fa03b90a1bdbc";
-    
+
     var politicsTop = "https://newsapi.org/v2/top-headlines?category=politics&language=en&apiKey=820ef3088f094cf4b42fa03b90a1bdbc";
     var businessTop = "https://newsapi.org/v2/top-headlines?category=business&language=en&apiKey=820ef3088f094cf4b42fa03b90a1bdbc";
     var techTop = "https://newsapi.org/v2/top-headlines?category=technology&language=en&apiKey=820ef3088f094cf4b42fa03b90a1bdbc";
@@ -56,8 +62,8 @@ $(document).ready(function () {
 
     };
     headlines();
-    
-    function politicsHeadlines(){
+
+    function politicsHeadlines() {
         $.get(politicsTop, function (response) {
             for (var i = 0; i < 30; i += 10) {
                 var title = response.articles[i].title;
@@ -69,8 +75,8 @@ $(document).ready(function () {
         });
     };
     politicsHeadlines();
-    
-    function businessHeadlines(){
+
+    function businessHeadlines() {
         $.get(businessTop, function (response) {
             for (var i = 0; i < 30; i += 10) {
                 var title = response.articles[i].title;
@@ -82,8 +88,8 @@ $(document).ready(function () {
         });
     };
     businessHeadlines();
-    
-    function techHeadlines(){
+
+    function techHeadlines() {
         $.get(techTop, function (response) {
             for (var i = 0; i < 30; i += 10) {
                 var title = response.articles[i].title;
@@ -118,6 +124,8 @@ $(document).ready(function () {
     topHeadlines(theHill, theHillDiv);
     topHeadlines(espn, espnDiv);
     topHeadlines(fourfourtwo, fourfourtwoDiv);
+    topHeadlines(bizInsider, bizInsiderDiv);
+    topHeadlines(wallStreet, wallStreetDiv);
 
 
 });
